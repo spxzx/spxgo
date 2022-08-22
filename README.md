@@ -2,6 +2,10 @@
 
 一个为了提升自己水平而写的Go框架。
 
+[TOC]
+
+
+
 ## binding
 
 ### binding.go
@@ -1160,13 +1164,13 @@ fmt.Fprintln(out, formatter(param))输出日志；
 
 ## spx.go
 
-### **常量**
+### 常量
 
 | 常量命    | 常量值 | 说明                 |
 | --------- | ------ | -------------------- |
 | MethodAny | "ANY"  | RESTful 方法可为任意 |
 
-### **数据结构**
+### 数据结构
 
 Engine
 
@@ -1197,7 +1201,7 @@ Engine
 | middlewaresFuncMap | map[string]map\[string][\][MiddlewareFunc](#MiddlewareFunc) | { "name": { "method": []MiddlewareFunc } }<br />路由、请求方法、中间件处理器之间的映射，用于组路由级别中间件 |
 | middlewares        | []MiddlewareFunc                                            | 组通用中间件                                                 |
 
-### **自定义类型**
+### 自定义类型
 
 | 类型名                                      | 具体类型                                  | 说明                                                         |
 | ------------------------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
@@ -1283,7 +1287,7 @@ treeNode
 
 ## utils.go
 
-### **工具函数**
+### 工具函数
 
 `func subStringLast(str string, substr string) string`
 用来处理路由组路径，即将路由组名与其后面的路径分离，返回后面的路径；
